@@ -38,7 +38,7 @@ pipeline {
                 script {
 				
 					sh '''
-												
+						ls -lrt						
 						cp -rv target/*.jar /home/ec2-user/apache-tomcat-7.0.32/webapps
 						#sudo cp -rv $HOME/jenkins/SampleWebApp.war /usr/share/tomcat/webapps
 					
