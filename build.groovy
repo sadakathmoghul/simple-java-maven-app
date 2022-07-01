@@ -5,6 +5,8 @@ pipeline {
         stage('Pre-Requisites') {
             steps {
                 script {
+			
+			
 					sh '''
 						hostname
 						hostname -i
