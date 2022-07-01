@@ -52,7 +52,7 @@ pipeline {
 	
 	post {
 		    always {
-				mail to: "tvharish513@gmail.com",
+				mail to: "sadakath.moghul@gmail.com",
 			    subject: "${env.JOB_NAME} - Build # ${env.BUILD_NUMBER} - ${currentBuild.currentResult}!",
 			    body: "${env.JOB_NAME} - Build # ${env.BUILD_NUMBER} - ${currentBuild.currentResult}!"
 				//mimeType: "text/html"
