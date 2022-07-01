@@ -26,7 +26,7 @@ pipeline {
 					sh '''
 						
 						cd $WORKSPACE
-						mvn clean install
+						mvnn clean install
 					
 					'''
 
