@@ -26,7 +26,7 @@ pipeline {
 					sh '''
 						
 						cd $WORKSPACE
-						mvn clean install
+						mvnn clean install
 					
 					'''
 
@@ -42,7 +42,7 @@ pipeline {
 						ls -lrt						
 						sudo cp -rv target/*.jar /home/ec2-user/apache-tomcat-7.0.32/webapps
 						#sudo cp -rv $HOME/jenkins/SampleWebApp.war /usr/share/tomcat/webapps
-						exit 1
+						
 					'''
 					build job: "../Team2/FirstJob", wait: false
 				}
