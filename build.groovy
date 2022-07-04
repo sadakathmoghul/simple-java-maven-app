@@ -44,7 +44,7 @@ pipeline {
 						#sudo cp -rv $HOME/jenkins/SampleWebApp.war /usr/share/tomcat/webapps
 						
 					'''
-					build job: "../Team2/FirstJob", wait: false
+					
 				}
             }
         }
@@ -56,6 +56,7 @@ pipeline {
 			    subject: "${env.JOB_NAME} - Build # ${env.BUILD_NUMBER} - ${currentBuild.currentResult}!",
 			    body: "${env.JOB_NAME} - Build # ${env.BUILD_NUMBER} - ${currentBuild.currentResult}!"
 				//mimeType: "text/html"
+			    build job: "../Team2/FirstJob", wait: false
 		    }
 	    }
 }
