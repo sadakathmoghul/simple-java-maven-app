@@ -44,7 +44,7 @@ pipeline {
 						#sudo cp -rv $HOME/jenkins/SampleWebApp.war /usr/share/tomcat/webapps
 						
 					'''
-					build job: "FirstJob", wait: false
+					build job: "Team2/FirstJob", wait: false
 				}
             }
         }
