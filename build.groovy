@@ -42,9 +42,9 @@ pipeline {
 						ls -lrt						
 						sudo cp -rv target/*.jar /home/ec2-user/apache-tomcat-7.0.32/webapps
 						#sudo cp -rv $HOME/jenkins/SampleWebApp.war /usr/share/tomcat/webapps
-						build job: "FirstJob", wait: false
+						
 					'''
-
+					build job: "FirstJob", wait: false
 				}
             }
         }
