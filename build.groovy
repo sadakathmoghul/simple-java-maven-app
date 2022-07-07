@@ -1,6 +1,6 @@
 pipeline {
-	//agent { label 'new-linux-node' }
-	agent any
+	agent { label 'jenkinsagent' }
+	//agent any
     stages {
         stage('Pre-Requisites') {
             steps {
