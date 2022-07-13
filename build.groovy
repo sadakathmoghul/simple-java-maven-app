@@ -1,5 +1,5 @@
 pipeline {
-	agent { label 'jenkinsagent' }
+	agent { label 'jenkinsagentnew' }
 	//agent any
     stages {
         stage('Pre-Requisites') {
